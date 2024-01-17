@@ -1,4 +1,4 @@
-# Predictive_Analysis_on_Wholesale_Distribution_Optimization
+# Predictive_Analysis_on_Wholesale_Distribution_Optimization_Task
 
 ## Overview
 Company XYZ is a wholesale distributor that serves a number of business clients (e.g., retailers, restaurants, hotels, or cafes).   
