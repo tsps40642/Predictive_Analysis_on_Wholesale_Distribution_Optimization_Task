@@ -262,17 +262,17 @@ head(kcluster$centers) # can see the centroids
 ```
 
     ##        Fresh       Milk    Grocery     Frozen Detergents_Paper Delicatessen
-    ## 1 0.28951801 0.06109561 0.05902438 0.08860389       0.02330097   0.04332125
-    ## 2 0.07521079 0.04114892 0.04154015 0.04305447       0.02488650   0.02120851
-    ## 3 0.04831988 0.14601276 0.18434265 0.02355312       0.18151814   0.03793272
-    ## 4 0.14232889 0.47184211 0.52312427 0.04979291       0.60925436   0.06132249
+    ## 1 0.14232889 0.47184211 0.52312427 0.04979291       0.60925436   0.06132249
+    ## 2 0.30814781 0.06249623 0.05936277 0.09574838       0.02039198   0.04300130
+    ## 3 0.07896195 0.04101507 0.04145936 0.04354059       0.02474872   0.02170474
+    ## 4 0.05181527 0.14567365 0.18337739 0.02360488       0.18012570   0.03889786
     ## 5 0.54007799 0.40936962 0.18659438 0.62494795       0.05266510   0.43174107
 
 ``` r
 head(kcluster$cluster) #can see the cluster that each entity belongs to 
 ```
 
-    ## [1] 2 2 2 2 1 2
+    ## [1] 3 3 3 3 2 3
 
 Use fviz_cluster() to visualize the results of k-means clustering.
 
@@ -317,18 +317,18 @@ head(kcluster_6$centers) # can see the centroids
 ```
 
     ##        Fresh       Milk    Grocery     Frozen Detergents_Paper Delicatessen
-    ## 1 0.31011699 0.41272824 0.18210332 0.80002137       0.01843278   0.55846892
-    ## 2 0.05420765 0.04161905 0.04290373 0.03463314       0.02706251   0.01950326
-    ## 3 0.44625568 0.05980705 0.05628599 0.09648669       0.02315260   0.05009102
-    ## 4 0.14232889 0.47184211 0.52312427 0.04979291       0.60925436   0.06132249
-    ## 5 0.04618026 0.15195458 0.18816843 0.02358471       0.18758865   0.03621417
-    ## 6 0.18387951 0.05443219 0.05449485 0.07837663       0.02625861   0.03645406
+    ## 1 0.08153853 0.03356148 0.03402561 0.04580743       0.01693902   0.01999370
+    ## 2 0.54007799 0.40936962 0.18659438 0.62494795       0.05266510   0.43174107
+    ## 3 0.05386718 0.11385779 0.13470358 0.02487225       0.12263007   0.03451410
+    ## 4 0.05641837 0.23160537 0.28347952 0.02982699       0.31668576   0.05291384
+    ## 5 0.30814781 0.06249623 0.05936277 0.09574838       0.02039198   0.04300130
+    ## 6 0.22826979 0.59101072 0.66254783 0.04291302       0.73415638   0.05644139
 
 ``` r
 head(kcluster_6$cluster) #can see the cluster that each entity belongs to 
 ```
 
-    ## [1] 2 2 2 6 6 2
+    ## [1] 3 3 3 1 5 1
 
 Use fviz_cluster() to visualize the results of k-means clustering.
 
@@ -406,13 +406,14 @@ hierarchical clustering. If you redo it again, the labels might not be
 the same as the elaboration below, but the main patterns will be almost
 the same:
 
-Cluster 2 has a bigger range in Frozen yet small range in
+There’s a cluster has a bigger range in Frozen yet small range in
 Detergents_Paper.  
-Cluster 3 spends really few on Frozen yet much on Detergents_Paper,
-compared to others.  
-Cluster 1 and 4 seem to follow different spending patterns since their
-ranges varies a lot on the 2 dimensions respectively, so do 2 and 3.  
-Cluster 5 seems relatively evenly falls on these 2 categories,
+There’s a cluster spends really few on Frozen yet much on
+Detergents_Paper, compared to others.  
+There’re two cluster seem to follow different spending patterns since
+their ranges varies a lot on the 2 dimensions respectively, so do 2 and
+3.  
+There’s a cluster seems relatively evenly falls on these 2 categories,
 indicating they have more tendency to buy both products.
 
 This just an example of patterns we’ve found in terms of these 2
