@@ -1,6 +1,6 @@
 Predictive_Analysis_on_Wholesale_Distribution_Optimization_Task
 ================
-For the plotting sections, please refer to Technical_document.pdf.  
+### For the plotting sections, please refer to Technical_document.pdf.  
 ``` r
 setwd('C:/Users/Yvonne/Desktop/UMN Courses/6131')
 library(dplyr)
