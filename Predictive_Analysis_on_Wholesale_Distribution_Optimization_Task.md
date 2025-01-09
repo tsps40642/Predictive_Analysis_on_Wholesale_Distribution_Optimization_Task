@@ -36,7 +36,7 @@ reasonable to do further interpretation. If yes, the data with cluster
 label we use in the managerial document is from hierarchical clustering,
 since the cluster labels of k-means clustering are different each time
 (same pattern, different labels assigned)  
-5. Evaluate Clustering Solutions: SSE, cluster plot, and Slihouette
+5. Evaluate Clustering Solutions: SSE, cluster plot, and Silhouette 
 Coefficient  
 6. Analysis after clustering  
 7. Summary for clustering and other analysis results  
